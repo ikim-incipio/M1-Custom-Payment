@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Incipio_Terms>
+			<version>1.0.0</version>
+		</Incipio_Terms>
+	</modules>
+	<global>
+		<helpers>
+			<terms>
+				<class>Incipio_Terms_Helper</class>
+			</terms>
+		</helpers>
+		<!-- <blocks>
+			<terms>
+				<class>Incipio_Terms_Block</class>
+			</terms>
+		</blocks> -->
+		<models>
+			<terms>
+				<class>Incipio_Terms_Model</class>
+			</terms>
+		</models>
+		<resources>
+			<terms_setup>
+				<setup>
+					<module>Incipio_Terms</module>
+				</setup>
+			</terms_setup>
+		</resources>
+	</global>
+	<default>
+		<payment>
+			<terms>
+				<active>1</active>
+				<model>terms/method</model>
+				<order_status>processing</order_status>
+				<title>Terms</title>
+				<allowspecific>1</allowspecific>
+				<payment_action>sale</payment_action>
+			</terms>
+		</payment>
+	</default>
+</config>
